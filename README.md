@@ -87,7 +87,7 @@ app.use('/api',apiRoutes);
   },
 ```
 ![配置成功的效果.png](http://upload-images.jianshu.io/upload_images/4092152-a54d3e5ea9a68c6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-####图标图片的自适应
+## 图标图片的自适应
 ![就是这样的图标.png](http://upload-images.jianshu.io/upload_images/4092152-203496a41045fc12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 这里用的是stylus，stylus功能强大，可以写成函数等等。这里可以参考[张鑫旭的博客](http://www.zhangxinxu.com/jq/stylus/)
 1、定义
@@ -119,7 +119,7 @@ app.use('/api',apiRoutes);
 联动效果，即右侧区域滚动到某个分类块其左侧菜单也要高亮显示
 首先我们想下逻辑。是不是要知道右侧区域的内容每个分类块的高度，当右侧内容列表的内容和和左侧菜单列表的下标值相等的时候，左侧菜单列表高亮显示。
 算出高度
-#####联动
+## 联动
 ```
   _calculateHeight(){ //获取foodList的高度
             let foodList = this.$refs.foodList;  //拿到foodlist
@@ -193,7 +193,7 @@ app.use('/api',apiRoutes);
 ```
 在左侧菜单点击触发
 
-####父组件goods项子组件传选中的商品
+## 父组件goods项子组件传选中的商品
 food子组件和shopcart，还有cartcontrol组件都会接收父组件goods传过来的值
 ```
  //在goods组件里面选了多少foods
@@ -257,7 +257,7 @@ food子组件和shopcart，还有cartcontrol组件都会接收父组件goods传�
             </div>
           </transition>
 ```
-####星级评分
+## 星级评分
 这里的星级评分的逻辑还算比较简单。它接受父组件传来的两个参数，一个是星星的大小，一个是分数。
 ```
      props:{
